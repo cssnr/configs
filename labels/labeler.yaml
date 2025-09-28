@@ -1,12 +1,16 @@
 workflows:
   - changed-files:
-      - any-glob-to-any-file: ".github/**"
+      - any-glob-to-any-file: ".github/workflows/**"
 
 documentation:
   - changed-files:
-      - any-glob-to-any-file: "docs/**"
+      - any-glob-to-any-file:
+          - "docs/**"
+          - "README.md"
+          - "CONTRIBUTING.md"
 
 source:
   - changed-files:
+      - any-glob-to-any-file: "app/**"
       - any-glob-to-any-file: "src/**"
       - any-glob-to-any-file: "dist/**"
