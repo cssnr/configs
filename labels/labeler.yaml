@@ -6,13 +6,22 @@ source:
   - changed-files:
       - any-glob-to-any-file:
           - "app/**"
-          - "src/**"
+          - "cmd/**"
           - "dist/**"
+          - "scripts/**"
+          - "src/**"
+          - "*.iss"
+          - "*.pkgproj"
+          - "go.mod"
+          - "go.sum"
+          - "main.go"
+          - "main.py"
           - "Dockerfile"
 
 documentation:
   - changed-files:
       - any-glob-to-any-file:
           - "docs/**"
-          - "README.md"
           - "CONTRIBUTING.md"
+          - "README.md"
+          - "TODO.md"
